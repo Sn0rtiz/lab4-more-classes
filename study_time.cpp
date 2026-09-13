@@ -1,3 +1,10 @@
+/*
+ * Course: COEN 2220 - Programming 2
+ * Name: [Sebastian N. Ortiz Mercado]
+ * Lab: Lab 4 - Object-Oriented Programming, Part 2
+ * Description: Aggregation practice with CourseSection
+ * Due date: [9/13/2026]
+ */
 #include <iostream>
 using namespace std;
 
