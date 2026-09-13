@@ -39,8 +39,9 @@ class StudyTime
 int StudyTime::objectCount = 0;    // Define the single shared variable.
 
 int main() {
-    StudyTime reading(45);          // The first StudyTime object.
 
+    StudyTime reading(45); // The first StudyTime object.
+    
     cout << "Reading: " << reading.getMinutes() << " minutes" << endl;
     cout << "Objects created: " << StudyTime::getObjectCount() << endl;
 
@@ -53,6 +54,26 @@ int main() {
     StudyTime total = reading + practice;  // Calls reading.operator+(practice).
 
     cout << "Total: " << total.getMinutes() << " minutes" << endl;
+    cout << "Objects created: " << StudyTime::getObjectCount() << endl;
+
+    //parte D
+    //Crea un objeto nuevo inicializado desde reading.
+
+    StudyTime otherCopy = reading; 
+
+    //Crea otro objeto nuevo con la duración por default.
+
+    StudyTime deafault;
+    //Asigna reading sobre el segundo objeto ya existente.
+
+    deafault=reading;
+
+    //Imprime el valor final de StudyTime::getObjectCount() y los minutos de ambos objetos.
+
+    cout << "OtherCopy: " << otherCopy.getMinutes() << " minutes" << endl;
+    cout << "Objects created: " << StudyTime::getObjectCount() << endl;
+
+    cout << "Default: " << deafault.getMinutes() << " minutes" << endl;
     cout << "Objects created: " << StudyTime::getObjectCount() << endl;
     return 0;
 }
